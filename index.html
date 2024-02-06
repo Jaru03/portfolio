@@ -9,40 +9,48 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div class="principal-icon">
                 <h2>José</h2>
             </div>
-            <div>
+            <div class="nav-bar">
                 <ul>
-                    <li>Inicio</li>
-                    <li>Acerca de mí</li>
-                    <li>Habilidades</li>
-                    <li>Portafolio</li>
-                    <li>Contacto</li>
+                    <li><a href="#">Inicio </a></li>
+                    <li><a href="#">Acerca de mí </a></li>
+                    <li><a href="">Habilidades</a></li>
+                    <li><a href="">Portafolio</a></li>
+                    <li><a href="">Contacto</a></li>
                 </ul>
             </div>
             <div>
-                <input type="checkbox" id="toggle" class="offscreen">
-                <label for="toggle" class="switch"></label>
-            </div>
-            <div>
-                <input type="checkbox" id="toggle" class="offscreen">
-                <label for="toggle" class="switch"></label>
+                    <input type="checkbox" id="toggle" class="offscreen">
+                    <label for="toggle" class="switch"></label>
+
+                    <input type="checkbox" id="toggle" class="offscreen">
+                    <label for="toggle" class="switch"></label>
             </div>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <h1>Hola, soy José</h1>
-            <p>Soy desarrollador web, apasionado por la tecnología y la programación</p>
-
-            <i>linkedin</i>
-            <i>whatsapp</i>
-            <i>github</i>
-            <i>email</i>
-
-            <button>Descargar CV</button>
-
+            <div class="hero-item info">
+                <h1>Hola, soy José</h1>
+                <p>Soy desarrollador web, apasionado por la tecnología y la programación</p>
+            </div>
+                
+            <ul class="hero-item icons">
+                <li>linkedin</li>
+                <li>whatsapp</li>
+                <li>Github</li>
+                <li>email</li>
+            </ul>
+            
+            <div class="hero-item button">
+                <button> Descargar CV</button>
+            </div>
+            <div class="hero-item profile-img">
+                <img src="assets/cat-sitting-on-top-wooden-260nw-2325014401.webp" alt="Foto Gato">
+            </div>
+            
         </section>
         <section class="about-me">
         
@@ -55,9 +63,55 @@
         </section>
 
         <section class="hability">
+            <h2>Habilidades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, consequatur vero repellendus nostrum odit repudiandae reiciendis totam veniam aperiam laboriosam accusamus ducimus quas quam dolor atque asperiores nulla earum perferendis?</p>
+            
+            <div class="hability conteint">
+                <details name="habilitys-cards" open>
+                    <summary>Html</summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
+                </details>
+                <details name="habilitys-cards" >
+                    <summary>css</summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
+                </details>
+                <details name="habilitys-cards">
+                    <summary>JavaScript</summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
+                </details>
+                <details name="habilitys-cards">
+                    <summary>React</summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
+                </details>
+            </div>
+            <div class="blandas">
+                <h3>Habilidades Blandas</h3>
+                <span class="blandas-habilitys">Responsable</span>
+                <span class="blandas-habilitys">Trabajo en equipo</span>
+                <span class="blandas-habilitys">Creativo</span>
+                <span class="blandas-habilitys">Puntal</span>
+                <span class="blandas-habilitys">Proactivo</span>
+                <span class="blandas-habilitys">Autodidacta</span>
+            </div>
 
         </section>
         <section class="proyects">
+            <h2>Proyectos</h2>
+            <article class="proyects">
+                <h3>proyecto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
+                <a href="">Ver demo</a><a href="">Ver código</a>
+            </article>
+            <article class="proyects">
+                <h3>proyecto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
+                <a href="">Ver demo</a><a href="">Ver código</a>
+            </article>
+            <article class="proyects">
+                <h3>proyecto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
+                <a href="">Ver demo</a><a href="">Ver código</a>
+            </article>
 
         </section>
         <section class="contact">
@@ -66,8 +120,17 @@
     </main>
     <footer>
         <section class="me">
-            <article class="me me__personal"></article>
-            <article class="me me__social-networks"></article>
+            <article class="me me__personal">
+                <h3>José Rico</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur corrupti sequi tempore! Sapiente dolorum ipsa minus dicta autem eveniet necessitatibus delectus est, iste esse qui ipsam! Dolor, eaque vel?</p>
+            </article>
+            <article class="me me__social-networks">
+                <h3>Redes sociales</h3>
+                <i>facebook</i>
+                <i>instagram</i>
+                <i>X</i>
+                <i>linkedin</i>
+            </article>
         </section>
         <section class="copyrigth"></section>
     </footer>

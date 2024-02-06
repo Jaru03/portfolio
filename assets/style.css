@@ -1,4 +1,55 @@
 *{
-    background-color: black;
-    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    ul{
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+
+    body{
+        max-width: 1200px;
+    }
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .nav-bar{
+        ul{
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.hero{
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+
+    .hero-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icons{
+        display: inherit;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column: 1/2;
+    }
+
+    .button{
+        grid-column:1/2 ;
+    }
+
 }
