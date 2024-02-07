@@ -1,54 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Rico">
+    <meta name="description" content="No más de 165 caracteres">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+    <meta name="theme-color" content="#09f">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="principal-icon">
-                <h2>José</h2>
-            </div>
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="#">Inicio </a></li>
-                    <li><a href="#">Acerca de mí </a></li>
-                    <li><a href="">Habilidades</a></li>
-                    <li><a href="">Portafolio</a></li>
-                    <li><a href="">Contacto</a></li>
+        <nav class="navbar grid--container">
+            <a class="navbar__logo" href="#">José Rico</a>
+            <div id="nav" class="navbar__menu">
+                <a href="#close"><i class='bx bx-x-circle btn__close navbar__icon' ></i></a>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar_link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar_link active" href="#about">Acerca de mí</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar_link active" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar_link active" href="#projects">Portafolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar_link active" href="#contact">Contacto</a>
+                    </li>
                 </ul>
             </div>
-            <div>
-                    <input type="checkbox" id="toggle" class="offscreen">
-                    <label for="toggle" class="switch"></label>
+            <div class="navbar__toggles">
+                <div class="navbar__toggle--darkmode">
+                    <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input">
+                    <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+                        <i class='bx bx-sun navbar__toggle--darkmode-sun' ></i>
+                        <i class='bx bx-moon navbar__toggle--darkmode-moon' ></i>
+                    </label>
+                </div>
+                <div class="navbar__toggle--lenguage">
+                    <input type="checkbox" id="lenguage-toggle" class="navbar__toggle--lenguage-input">
+                    <label for="lenguage-toggle" class="navbar__toggle--lenguage-label">
 
-                    <input type="checkbox" id="toggle" class="offscreen">
-                    <label for="toggle" class="switch"></label>
+                    </label>
+                </div>
             </div>
+            <a href="#nav"><i class='bx bx-menu btn__open navbar__icon' ></i></a>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-item info">
-                <h1>Hola, soy José</h1>
+        <section class="home" id="home">
+
+            <i class='bx bxl-html5 home_layer home_layer--1' data-speed="-5"></i>
+            <i class='bx bxl-javascript home_layer home_layer--2' data-speed="5"></i>
+            <i class='bx bxl-css3 home_layer home_layer--3' data-speed="2"></i>
+            <i class='bx bxl-nodejs home_layer home_layer--4' data-speed="6"></i>
+            <i class='bx bxl-react home_layer home_layer--5' data-speed="8"></i>
+            <i class='bx bxl-tailwind-css home_layer home_layer--6' data-speed="-2"></i>
+            <i class='bx bxl-redux home_layer home_layer--7' data-speed="4"></i>
+            <i class='bx bxl-typescript home_layer home_layer--8' data-speed="-2"></i>
+            <i class='bx bxl-git home_layer home_layer--9' data-speed="6"></i>
+            <i class='bx bxl-graphql home_layer home_layer--10' data-speed="-7"></i>
+            <i class='bx bx-code-alt home_layer home_layer--11' data-speed="-5"></i>
+
+            <div class="home__container grid--container">
+                <div class="home__image">
+                    <img src="assets/img/profile.ppng" alt="profile">
+                </div>
+            </div>
+            <ul class="home__social">
+                <li class="home__social-item">
+                    <a href="#" class="home__social-link"><i class='bx bxl-linkedin' ></i></a>
+                </li>
+                <li class="home__social-item">
+                    <a href="#" class="home__social-link"><i class='bx bxl-whatsapp' ></i></a>
+                </li>
+                <li class="home__social-item">
+                    <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
+                </li>
+                <li class="home__social-item">
+                    <a href="#" class="home__social-link"><i class='bx bx-envelope' ></i></a>
+                </li>
+            </ul>
+
+            <div class="home__info">
+                <h1 class="home__title">Hola, soy José</h1>
                 <p>Soy desarrollador web, apasionado por la tecnología y la programación</p>
             </div>
                 
-            <ul class="hero-item icons">
-                <li>linkedin</li>
-                <li>whatsapp</li>
-                <li>Github</li>
-                <li>email</li>
-            </ul>
-            
-            <div class="hero-item button">
-                <button> Descargar CV</button>
-            </div>
-            <div class="hero-item profile-img">
-                <img src="assets/cat-sitting-on-top-wooden-260nw-2325014401.webp" alt="Foto Gato">
+            <div class="home__buttons">
+                <button class="btn btn--primary" type="button">Descarga CV</button>
             </div>
             
         </section>
