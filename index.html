@@ -1,185 +1,277 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="José Rico">
-    <meta name="description" content="No más de 165 caracteres">
-    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
-    <meta name="theme-color" content="#09f">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandra Olazagasti">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+  <meta name="theme-color" content="#09f">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Portafolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar grid--container">
-            <a class="navbar__logo" href="#">José Rico</a>
-            <div id="nav" class="navbar__menu">
-                <a href="#close"><i class='bx bx-x-circle btn__close navbar__icon' ></i></a>
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a class="navbar_link active" href="#home">Inicio</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar_link active" href="#about">Acerca de mí</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar_link active" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar_link active" href="#projects">Portafolio</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar_link active" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar__toggles">
-                <div class="navbar__toggle--darkmode">
-                    <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input">
-                    <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
-                        <i class='bx bx-sun navbar__toggle--darkmode-sun' ></i>
-                        <i class='bx bx-moon navbar__toggle--darkmode-moon' ></i>
-                    </label>
-                </div>
-                <div class="navbar__toggle--lenguage">
-                    <input type="checkbox" id="lenguage-toggle" class="navbar__toggle--lenguage-input">
-                    <label for="lenguage-toggle" class="navbar__toggle--lenguage-label">
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a class="navbar__logo" href="#"><i class='bx bxs-registered'></i>Goku</a>
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class='bx bx-x-circle btn__close navbar__icon'></i></a>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles">
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle" class="navabar__toggle--darkmode-input">
+          <label for="darkmode-toggle" class="navabar__toggle--darkmode-label">
+            <i class='bx bx-sun navabar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navabar__toggle--darkmode-moon'></i>
+          </label>
+        </div>
+        <div class="navabar__toggle--language">
+          <input type="checkbox" id="language-toggle" class="navabar__toggle--language-input">
+          <label for="language-toggle" class="navabar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class='bx bx-menu btn__open navbar__icon'></i></a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="home">
+      <i class='bx bxl-html5 home__layer home__layer--1' data-speed="-5"></i>
+      <i class='bx bxl-javascript home__layer home__layer--2' data-speed="5"></i>
+      <i class='bx bxl-css3 home__layer home__layer--3' data-speed="2"></i>
+      <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="6"></i>
+      <i class='bx bxl-react home__layer home__layer--5' data-speed="8"></i>
+      <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-2"></i>
+      <i class='bx bxl-redux home__layer home__layer--7' data-speed="4"></i>
+      <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-2"></i>
+      <i class='bx bxl-git home__layer home__layer--9' data-speed="6"></i>
+      <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-7"></i>
+      <i class='bx bx-code-alt home__layer home__layer--11' data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets/img/profile.png" alt="profile photo">
+        </div>
+        <ul class="home__social">
+          <li class="home__social-item">
+            <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a href="#" class="home__social-link"><i class='bx bxl-whatsapp'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a href="#" class="home__social-link"><i class='bx bxl-github'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a href="#" class="home__social-link"><i class='bx bx-envelope'></i></a>
+          </li>
+        </ul>
+        <div class="home__info">
+          <h1 class="home__title">Hey, soy Goky</h1>
+          <p>Soy desarrollador web, apasionado por la tecnología y la programación</p>
 
-                    </label>
-                </div>
-            </div>
-            <a href="#nav"><i class='bx bx-menu btn__open navbar__icon' ></i></a>
-        </nav>
-    </header>
-    <main>
-        <section class="home" id="home">
+        </div>
+        <div class="home__buttons">
+          <button class="btn btn--primary" type="button">Descarga CV</button>
+        </div>
+      </div>
 
-            <i class='bx bxl-html5 home_layer home_layer--1' data-speed="-5"></i>
-            <i class='bx bxl-javascript home_layer home_layer--2' data-speed="5"></i>
-            <i class='bx bxl-css3 home_layer home_layer--3' data-speed="2"></i>
-            <i class='bx bxl-nodejs home_layer home_layer--4' data-speed="6"></i>
-            <i class='bx bxl-react home_layer home_layer--5' data-speed="8"></i>
-            <i class='bx bxl-tailwind-css home_layer home_layer--6' data-speed="-2"></i>
-            <i class='bx bxl-redux home_layer home_layer--7' data-speed="4"></i>
-            <i class='bx bxl-typescript home_layer home_layer--8' data-speed="-2"></i>
-            <i class='bx bxl-git home_layer home_layer--9' data-speed="6"></i>
-            <i class='bx bxl-graphql home_layer home_layer--10' data-speed="-7"></i>
-            <i class='bx bx-code-alt home_layer home_layer--11' data-speed="-5"></i>
+    </section>
+    <section class="about section" id="about">
+      <h2 class="section__title">Acerca de Mí</h2>
 
-            <div class="home__container grid--container">
-                <div class="home__image">
-                    <img src="assets/img/profile.ppng" alt="profile">
-                </div>
-            </div>
-            <ul class="home__social">
-                <li class="home__social-item">
-                    <a href="#" class="home__social-link"><i class='bx bxl-linkedin' ></i></a>
-                </li>
-                <li class="home__social-item">
-                    <a href="#" class="home__social-link"><i class='bx bxl-whatsapp' ></i></a>
-                </li>
-                <li class="home__social-item">
-                    <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
-                </li>
-                <li class="home__social-item">
-                    <a href="#" class="home__social-link"><i class='bx bx-envelope' ></i></a>
-                </li>
-            </ul>
-
-            <div class="home__info">
-                <h1 class="home__title">Hola, soy José</h1>
-                <p>Soy desarrollador web, apasionado por la tecnología y la programación</p>
-            </div>
-                
-            <div class="home__buttons">
-                <button class="btn btn--primary" type="button">Descarga CV</button>
-            </div>
-            
-        </section>
-        <section class="about-me">
+      <div class="about__container grid--container">
+        <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quod minus neque, culpa ab cupiditate, quidem, debitis repudiandae deserunt eaque nam quis ullam accusamus magni expedita? Suscipit doloremque repudiandae repellat?</p>
         
-            <h2>Acerca de mí</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi totam, quaerat qui recusandae error ex dolor fuga sed, cum magni perspiciatis corrupti omnis voluptate cumque laborum vero aut libero!</p>
+        <div class="about__cards">
+          <!-- Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.jpg" alt="Laborando como ingeniero">
+          </div>
+          <!-- Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como ingeniero">
+          </div>
+          <!-- Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Laborando como ingeniero">
+          </div>
 
-            <article class="cards">foto</article>
-            <article class="cards">foto</article>
-            <article class="cards">foto</article>
-        </section>
-
-        <section class="hability">
-            <h2>Habilidades</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, consequatur vero repellendus nostrum odit repudiandae reiciendis totam veniam aperiam laboriosam accusamus ducimus quas quam dolor atque asperiores nulla earum perferendis?</p>
-            
-            <div class="hability conteint">
-                <details name="habilitys-cards" open>
-                    <summary>Html</summary>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
-                </details>
-                <details name="habilitys-cards" >
-                    <summary>css</summary>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
-                </details>
-                <details name="habilitys-cards">
-                    <summary>JavaScript</summary>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
-                </details>
-                <details name="habilitys-cards">
-                    <summary>React</summary>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque molestias esse incidunt, autem maiores doloribus numquam quos eaque iusto dolores alias voluptate dignissimos voluptatem eum distinctio ea quia, nam reiciendis!</p>
-                </details>
-            </div>
-            <div class="blandas">
-                <h3>Habilidades Blandas</h3>
-                <span class="blandas-habilitys">Responsable</span>
-                <span class="blandas-habilitys">Trabajo en equipo</span>
-                <span class="blandas-habilitys">Creativo</span>
-                <span class="blandas-habilitys">Puntal</span>
-                <span class="blandas-habilitys">Proactivo</span>
-                <span class="blandas-habilitys">Autodidacta</span>
+        </div>
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="skills__container grid--container">
+        <p class="skills__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quisquam cupiditate ipsam, odit nobis distinctio eaque obcaecati commodi aliquid dignissimos soluta beatae itaque praesentium sunt, consequuntur consequatur quibusdam! Ad, tempora!</p>
+        <div class="skills_wrapper">
+          <div class="skills_cards">
+            <input type="radio" name="slide" id="c1" checked class="skills__input">
+            <label for="c1" class="skills_card"></label>
+            <div class="skills__card-row">
+              <i class="bx bxl-html5"></i>
+              <div class="skills__description">
+                <h3 class="skills__card-tittle">HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum rem minus consequuntur non perferendis tempore aut, eveniet numquam ullam. Culpa architecto modi animi vitae voluptates molestias debitis dolore exercitationem.</p>
+              </div>
             </div>
 
-        </section>
-        <section class="proyects">
-            <h2>Proyectos</h2>
-            <article class="proyects">
-                <h3>proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
-                <a href="">Ver demo</a><a href="">Ver código</a>
-            </article>
-            <article class="proyects">
-                <h3>proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
-                <a href="">Ver demo</a><a href="">Ver código</a>
-            </article>
-            <article class="proyects">
-                <h3>proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam itaque recusandae neque natus incidunt delectus soluta temporibus laborum! Eius inventore pariatur nobis atque autem perferendis nemo dolorem ducimus cum repudiandae.</p>
-                <a href="">Ver demo</a><a href="">Ver código</a>
-            </article>
+          </div>
+          <div class="skills_cards">
+            <input type="radio" name="slide" id="c2" checked class="skills__input">
+            <label for="c2" class="skills_card"></label>
+            <div class="skills__card-row">
+              <i class="bx bxl-css3"></i>
+              <div class="skills__description">
+                <h3 class="skills__card-tittle">CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum rem minus consequuntur non perferendis tempore aut, eveniet numquam ullam. Culpa architecto modi animi vitae voluptates molestias debitis dolore exercitationem.</p>
+              </div>
+            </div>
 
-        </section>
-        <section class="contact">
+          </div>
+          <div class="skills_cards">
+            <input type="radio" name="slide" id="c3" checked class="skills__input">
+            <label for="c3" class="skills_card"></label>
+            <div class="skills__card-row">
+              <i class="bx bxl-javascript"></i>
+              <div class="skills__description">
+                <h3 class="skills__card-tittle">JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum rem minus consequuntur non perferendis tempore aut, eveniet numquam ullam. Culpa architecto modi animi vitae voluptates molestias debitis dolore exercitationem.</p>
+              </div>
+            </div>
 
-        </section>
-    </main>
-    <footer>
-        <section class="me">
-            <article class="me me__personal">
-                <h3>José Rico</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur corrupti sequi tempore! Sapiente dolorum ipsa minus dicta autem eveniet necessitatibus delectus est, iste esse qui ipsam! Dolor, eaque vel?</p>
-            </article>
-            <article class="me me__social-networks">
-                <h3>Redes sociales</h3>
-                <i>facebook</i>
-                <i>instagram</i>
-                <i>X</i>
-                <i>linkedin</i>
-            </article>
-        </section>
-        <section class="copyrigth"></section>
-    </footer>
+          <div class="skills_cards">
+            <input type="radio" name="slide" id="c4" checked class="skills__input">
+            <label for="c4" class="skills_card"></label>
+            <div class="skills__card-row">
+              <i class="bx bxl-react"></i>
+              <div class="skills__description">
+                <h3 class="skills__card-tittle">React</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum rem minus consequuntur non perferendis tempore aut, eveniet numquam ullam. Culpa architecto modi animi vitae voluptates molestias debitis dolore exercitationem.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="skills__tags">
+          <h3 class="skills__tags-tittle">Habilidades Blandas</h3>
+          <div class="skills__tags-container">
+            <span class="skills__tags">Responsable</span>
+            <span class="skills__tags">Trabajo en equipo</span>
+            <span class="skills__tags">Creativo</span>
+            <span class="skills__tags">Puntual</span>
+            <span class="skills__tags">Proactivo</span>
+            <span class="skills__tags">Autodidacta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects section" id="projects">
+      <h2 class="section__title">Proyectos</h2>
+      <div class="projects__container grid--container">
+        <div class="projects__projects">
+          <div class="projects__inner grid--container">
+            <div class="projects__image"><img src="assets/img/project1.jpg" alt="project1"></div>
+          </div>
+          <div class="projects__info">
+            <h3 class="name">Proyecto 1</h3>
+            <p class="projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem eaque dolor qui. Error incidunt optio consequatur neque ipsa adipisci doloribus recusandae quaerat, facere, unde quia iusto delectus minima possimus.</p>
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">VER DEMO</button>
+              <button class="btn projects__button" type="button">VER CÓDIGO</button>
+            </div>
+          </div>
+          <div class="projects__inner grid--container">
+            <div class="projects__image"><img src="assets/img/project1.jpg" alt="project1"></div>
+          </div>
+          <div class="projects__info">
+            <h3 class="name">Proyecto 2</h3>
+            <p class="projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem eaque dolor qui. Error incidunt optio consequatur neque ipsa adipisci doloribus recusandae quaerat, facere, unde quia iusto delectus minima possimus.</p>
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">VER DEMO</button>
+              <button class="btn projects__button" type="button">VER CÓDIGO</button>
+            </div>
+          </div>
+          <div class="projects__inner grid--container">
+            <div class="projects__image"><img src="assets/img/project1.jpg" alt="project1"></div>
+          </div>
+          <div class="projects__info">
+            <h3 class="name">Proyecto 3</h3>
+            <p class="projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem eaque dolor qui. Error incidunt optio consequatur neque ipsa adipisci doloribus recusandae quaerat, facere, unde quia iusto delectus minima possimus.</p>
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">VER DEMO</button>
+              <button class="btn projects__button" type="button">VER CÓDIGO</button>
+            </div>
+          </div>
+          <div class="projects__inner grid--container">
+            <div class="projects__image"><img src="assets/img/project1.jpg" alt="project1"></div>
+          </div>
+          <div class="projects__info">
+            <h3 class="name">Proyecto 3</h3>
+            <p class="projects">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem eaque dolor qui. Error incidunt optio consequatur neque ipsa adipisci doloribus recusandae quaerat, facere, unde quia iusto delectus minima possimus.</p>
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">VER DEMO</button>
+              <button class="btn projects__button" type="button">VER CÓDIGO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contacto</h2>
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-tittle">Informacion de Contacto</h3>
+          <p class="contact__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus distinctio quo, non dolorum voluptatem labore blanditiis sint laboriosam architecto, similique id delectus deserunt placeat dolore assumenda nemo eius odio.</p>
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+              <span class="contact__info-number">
+                <a href="https://wa.mw/00000000?text=Tu%20Mensaje%20">+58 424 629 99 55</a>
+              </span>
+            </div>
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+              <span class="contact__info-number">
+                <a href="https://wa.mw/00000000?text=Tu%20Mensaje%20">+58 424 629 99 55</a>
+              </span>
+            </div>
+            <div class="contact__info-item">
+              <i class="bx bx-envelope"></i>
+              <span class="contact__info-number">
+                <a href="https://wa.mw/00000000?text=Tu%20Mensaje%20">+58 424 629 99 55</a>
+              </span>
+            </div>
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+              <span class="contact__info-number">
+                <a href="https://wa.mw/00000000?text=Tu%20Mensaje%20">+58 424 629 99 55</a>
+              </span>
+            </div>
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
+
 </html>
