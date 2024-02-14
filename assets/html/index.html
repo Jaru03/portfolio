@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,15 +18,18 @@
 
   <title>Portafolio</title>
 
-  <link rel="icon" href="assets/img/logo.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script type="module" src="assets/js/main.js" defer></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('sdf4NNK1DuO0DmNrg')
-</script>
+  <link rel="icon" href="../img/logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="../js/main.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "eepJ3aozWvvDMEzPM",
+      });
+    })();
+  </script>
 </head>
 
 <body>
@@ -39,19 +42,19 @@
 
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a class="navbar__link active" href="#home">Inicio</a>
+            <a class="navbar__link active" href="#home">Home</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#about">Acerca de Mí</a>
+            <a class="navbar__link" href="#about">About me</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#skills">Habilidades</a>
+            <a class="navbar__link" href="#skills">Skills</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portafolio</a>
+            <a class="navbar__link" href="#projects">Proyects</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#contact">Contacto</a>
+            <a class="navbar__link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -64,7 +67,7 @@
           </label>
         </div>
         <div class="navbar__toggle--language">
-            <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input"  />
+            <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" checked />
             <label for="language-toggle" class="navbar__toggle--language-label" >
         </div>
       </div>
@@ -88,7 +91,7 @@
       <div class="home__container grid--container">
         <div class="home__image">
           <span></span>
-          <img src="assets/img/profile.png" alt="profile photo" />
+          <img src="../img/profile.png" alt="profile photo" />
         </div>
 
         <ul class="home__social">
@@ -108,54 +111,54 @@
 
         <div class="home__info">
 
-          <h1 class="home__title">Hola, soy José</h1>
+          <h1 class="home__title">Hi, I am José</h1>
 
           <p class="home__description">
-            Soy desarrollador web, apasionado por la tecnología y la
-            programación, entusiasta, amigable y amante de lo moderno.
+            I am a web developer, passionate about technology and
+            programming, enthusiastic, friendly and lover of modern things.
           </p>
         </div>
 
         <div class="home__buttons">
-          <button class="btn btn--primary" type="button">Descarga CV</button>
+          <button class="btn btn--primary" type="button">Download CV</button>
         </div>
       </div>
 
     </section>
 
     <section id="about" class="about section">
-      <h2 class="section__title">Acerca de Mí</h2>
+      <h2 class="section__title">About Me</h2>
 
       <div class="about__container grid--container">
         <p class="about__description">
-          Soy un jóven Venezolano estudiante en Academlo con ganas de seguir aprendiendo. A finales de mi secundaria descubrí que me gustaba la programación por lo cual empecé en este mundo en el cual terminé enamorado.
+            I am a young Venezuelan student at Academlo who wants to continue learning. At the end of my high school I discovered that I liked programming, which is why I started in this world in which I ended up falling in love.
         </p>
 
         <div class="about__cards">
           <!--Card 1 -->
           <div class="about__card">
-            <img class="about__card--img" src="assets/img/me_1.jpg" alt="Laborando como ingeniero">
+            <img class="about__card--img" src="../img/me_1.jpg" alt="Laborando como ingeniero">
           </div>
           <!--Card 2 -->
           <div class="about__card">
             <video width="250px" height="300" loop autoplay>
-              <source src="assets/video/Video.mp4" type="video/mp4">
+              <source src="../video/Video.mp4" type="video/mp4">
             </video>
           </div>
           <!--Card 3 -->
           <div class="about__card">
-            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo">
+            <img class="about__card--img" src="../img/me_3.jpg" alt="Trabajando en equipo">
           </div>
         </div>
 
       </div>
     </section>
     <section id="skills" class="skills section">
-      <h2 class="section__title">Habilidades</h2>
+      <h2 class="section__title">Skills</h2>
 
       <div class="skills__container grid--container">
         <p class="skills__description">
-          Me especializo en todo el entorno del Fron-End. 
+            I specialize in the entire Front-End environment.
         </p>
 
         <div class="skills__wrapper">
@@ -167,7 +170,7 @@
                 <i class="bx bxl-html5"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">HTML</h3>
-                  <p>Varios proyectos de HTML, en los cuales contiene maquetación, y etiquetas semanticas para mejorar el SEO. Emmet para poder desarrollar proyectos de manera eficiente y rápida.</p>
+                  <p>Several HTML projects, which contain layout and semantic tags to improve SEO. Emmet to be able to develop projects efficiently and quickly.</p>
                 </div>
               </div>
             </label>
@@ -178,7 +181,7 @@
                 <i class="bx bxl-css3"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">CSS3</h3>
-                  <p>Dominio de CSS moderno. Nesting para poder leer el código de mejor forma, animaciónes y algunos trucos extra los cuales mejoran visualmente la página.</p>
+                  <p>Modern CSS proficiency. Nesting to be able to read the code better, animations and some extra tricks which visually improve the page.</p>
                 </div>
               </div>
             </label>
@@ -189,7 +192,7 @@
                 <i class="bx bxl-javascript"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">Javascript</h3>
-                  <p>Proyectos con JavaScript funcionales y actualizados. Cada día intento mejorar mis habilidades de JavaScript aprendiendo e investigando más por mi cuenta</p>
+                  <p>Projects with functional and updated JavaScript. Every day I try to improve my JavaScript skills by learning and researching more on my own.</p>
                 </div>
               </div>
             </label>
@@ -200,48 +203,48 @@
                 <i class='bx bxl-react'></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">React</h3>
-                  <p>Uso de la librería React para mejorar las páginas webs. Es la librería más demanda de JavaScript, por lo cual decidí aprenderla y usarla para completar mi entorno de Front-end</p>
+                  <p>Use of the React library to improve web pages. It is the most in-demand JavaScript library, which is why I decided to learn it and use it to complete my Front-end environment.</p>
                 </div>
               </div>
             </label>
           </div>
         </div>
         <div class="skills__tags">
-          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <h3 class="skills__tags-title">Soft Skills</h3>
           <div class="skills__tags-container">
-            <span class="skills__tag">Responsable</span>
-            <span class="skills__tag">Trabajo en equipo</span>
-            <span class="skills__tag">Creativo</span>
-            <span class="skills__tag">Puntual</span>
-            <span class="skills__tag">Proactivo</span>
-            <span class="skills__tag">Autodidacta</span>
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Autodidact</span>
           </div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects section">
-      <h2 class="section__title">Proyectos</h2>
+      <h2 class="section__title">Proyects</h2>
       <!-- PROYECTO 1  -->
       <div class="projects__container grid--container">
         <div class="projects__project">
           <div class="projects__inner grid--container">
             <div class="projects__image">
-              <img src="assets/img/project1.jpg" alt="project 1" />
+              <img src="../img/project1.jpg" alt="project 1" />
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Proyecto 1</h3>
+              <h3 class="projects__name">Proyect 1</h3>
               <p class="projects__description">
-                Próximamente...
+                Soon...
               </p>
 
               <div class="projects__buttons">
                 <button class="btn projects__button" type="button">
-                  VER DEMO
+                  SEE DEMO
                 </button>
                 <button class="btn projects__button" type="button">
-                  VER CÓDIGO
+                  SEE CODE
                 </button>
               </div>
             </div>
@@ -252,21 +255,21 @@
         <div class="projects__project">
           <div class="projects__inner grid--container">
             <div class="projects__image">
-              <img src="assets/img/project2.png" alt="project 2" />
+              <img src="../img/project2.png" alt="project 2" />
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Proyecto 2</h3>
+              <h3 class="projects__name">Proyect 2</h3>
               <p class="projects__description">
-                Próximamente...
+                Soon...
               </p>
 
               <div class="projects__buttons">
                 <button class="btn projects__button" type="button">
-                  VER DEMO
+                  SEE DEMO
                 </button>
                 <button class="btn projects__button" type="button">
-                  VER CÓDIGO
+                  SEE CODE
                 </button>
               </div>
             </div>
@@ -277,21 +280,21 @@
         <div class="projects__project">
           <div class="projects__inner grid--container">
             <div class="projects__image">
-              <img src="assets/img/project3.jpg" alt="project 3" />
+              <img src="../img/project3.jpg" alt="project 3" />
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Proyecto 3</h3>
+              <h3 class="projects__name">Proyect 3</h3>
               <p class="projects__description">
-                Próximamente...
+                Soon...
               </p>
 
               <div class="projects__buttons">
                 <button class="btn projects__button" type="button">
-                  VER DEMO
+                  SEE DEMO
                 </button>
                 <button class="btn projects__button" type="button">
-                  VER CÓDIGO
+                  SEE CODE
                 </button>
               </div>
             </div>
@@ -302,21 +305,21 @@
         <div class="projects__project">
           <div class="projects__inner grid--container">
             <div class="projects__image">
-              <img src="assets/img/project4.png" alt="project 4" />
+              <img src="../img/project4.png" alt="project 4" />
             </div>
 
             <div class="projects__info">
-              <h3 class="projects__name">Proyecto 4</h3>
+              <h3 class="projects__name">Proyect 4</h3>
               <p class="projects__description">
-                Próximamente...
+                Soon...
               </p>
 
               <div class="projects__buttons">
                 <button class="btn projects__button" type="button">
-                  VER DEMO
+                  SEE DEMO
                 </button>
                 <button class="btn projects__button" type="button">
-                  VER CÓDIGO
+                  SEE CODE
                 </button>
               </div>
             </div>
@@ -326,13 +329,13 @@
     </section>
 
     <section id="contact" class="contact section">
-      <h2 class="section__title">Contacto</h2>
+      <h2 class="section__title">Contact</h2>
 
       <div class="contact__container grid--container">
         <div class="contact__info">
-          <h3 class="contact__info-title">Información de contacto</h3>
+          <h3 class="contact__info-title">Contact Information</h3>
           <p class="contact__info-description">
-            En este apartado te dejo mi información de contacto.
+            In this section I leave you my contact information.
           </p>
 
           <address class="contatc__info-data">
@@ -370,34 +373,34 @@
         </div>
 
         <div class="contact__form">
-          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <h3 class="contact__form-title">Send mensaje</h3>
           <form id="form" class="contact__form-container">
             <div class="contact__form-group">
-              <label for="name" class="contact__form-label">Nombre</label>
+              <label for="name" class="contact__form-label">Name</label>
               <input type="text" id="name" name="name" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="email" class="contact__form-label">Correo</label>
+              <label for="email" class="contact__form-label">E-mail</label>
               <input type="email" id="email" name="email" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="subject" class="contact__form-label">Asunto</label>
+              <label for="subject" class="contact__form-label">Affair</label>
               <input type="text" id="subject" name="subject" class="contact__form-input" />
             </div>
 
             <div class="contact__form-group">
-              <label for="message" class="contact__form-label">Mensaje</label>
+              <label for="message" class="contact__form-label">Message</label>
               <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
             </div>
             <dialog id="modal">
-              Formulario enviado con éxito!
-              <button type="reset" id="btn_close-modal">Cerrar</button>
+                Sent successfully!
+              <button type="reset" id="btn_close-modal">Close</button>
             </dialog>
 
             <button type="submit" class="btn contact__form-button">
-              Enviar
+              Sent
             </button>
 
           </form>
@@ -411,13 +414,13 @@
       <div class="footer__info">
         <h3 class="footer__title">José Alberto Rico</h3>
         <p class="footer__description">
-          Soy desarrollador web, apasionado por la tecnología y la
-          programación.
+            I am a web developer, passionate about technology and
+            programming.
         </p>
       </div>
 
       <div class="footer__social">
-        <h3 class="footer__title">Redes Sociales</h3>
+        <h3 class="footer__title">Social Networks</h3>
 
         <ul class="footer__social-list">
           <li class="footer__social-item">
